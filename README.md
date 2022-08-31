@@ -12,6 +12,8 @@
  https://www.w3.org/wiki/JavaScript_best_practices
  https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/
  https://medium.com/before-semicolon/50-javascript-best-practice-rules-to-write-better-code-86ce731311d7
+ 
+ 
 - [Configuração ambiente de desenvolvimento](#headers)  
   - [Ferramentas](#emphasis)
   - [Boilerplates](#emphasis)
@@ -19,7 +21,7 @@
   - [Criando novo projeto](#emphasis)
     - [Histórias de usuário](#emphasis)
     - [BDD com Gherkin](#emphasis)
-    - [Planejamento e versionamento]
+    - [Planejamento e versionamento](#)
     - [TDD](#emphasis)
     - [Desenvolvimento](#)
     - [Refatoração](#)
@@ -40,28 +42,13 @@
   - [Configurando ambiente CD](#)
   - [Gerenciando servidores](#)
   - [Gerenciando Backups](#)
-...snip...    
-<a name="headers"/>
-## Headers
 
 
 
+# Configuração ambiente de desenvolvimento
+## Ferramentas
+## Boirlerplates
+# Gerenciamento de projetos
+## Histórias de usuário
+## BDD com Gherkin
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Emphasis
