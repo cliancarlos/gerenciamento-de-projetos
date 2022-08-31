@@ -49,6 +49,14 @@
 ## Ferramentas
 ## Boirlerplates
 # Gerenciamento de projetos
-## Histórias de usuário
-## BDD com Gherkin
+O gerenciamento dos projetos são feitos com base na técnica de desenvolvimento [Extreme Programming](http://www.extremeprogramming.org/).
+## Criando um novo projeto
+Ao iniciar um novo projeto dentro dos padrões do XP, devemos sempre ter em mente o termos **MVP** e **entrega contínua**.
+**MVP**: MVP significa Minimum Viable Product ou Produto Mínimo Viável. Ao iniciar a reunião para definir os requisitos e funcionalidades do novo projeto, devemos sempre buscar a versão mínima do produto, para que possamos lançar o mais rápido possível, e ao longo do uso, vamos definindo os próximos passos e necessidades do projeto.
+**Entrega Contínua**: Entrega contínua é uma abordagem na qual os times de desenvolvimento lançam produtos de qualidade de forma frequente, previsível e automatizada. Em vez de fazer grandes entregas de uma vez, fazem várias pequenas e rápidas — reduzindo as chances de erros e conquistando maior controle de qualidade.
+
+Portando logo no ínicio do projeto SEMPRE pensar no mínimo do mínimo que é necessário para lançar o projeto o mais rápido possível, geralmente o ciclo de lançamento é de 1 à 3 semanas.
+### Histórias de usuário
+
+### BDD com Gherkin
 
