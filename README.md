@@ -5,14 +5,14 @@
 Este repositório tem como objetivo ser um guia que cobre as melhores práticas e ferramentas para desenvolver um software do mundo real desde a concepção até o deploy para desenvolvedores independentes e pequenas equipes de desenvolvimento.
 
  
-- [Configuração ambiente de desenvolvimento](#Configuração ambiente de desenvolvimento)  
+- [Configuração ambiente de desenvolvimento](#Configuração-ambiente-de-desenvolvimento)  
   - [Ferramentas](#Ferramentas)
   - [Boilerplates](#Boilerplates)
 - [Gerenciamento de projetos](#Gerenciamento de projetos)
   - [Criando novo projeto](#Criando novo projeto)
     - [Histórias de usuário](#Histórias de usuário)
     - [BDD com Gherkin](#BDD com Gherkin)
-    - [Planejamento e versionamento](#[Planejamento e versionamento)
+    - [Planejamento e versionamento](#Planejamento e versionamento)
     - [TDD](#TDD)
     - [Desenvolvimento](#Desenvolvimento)
     - [Refatoração](#Refatoração)
