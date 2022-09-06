@@ -1,61 +1,45 @@
 ## Gerenciamento de projetos de software: do conceito à implantação
 
-⚠️ Este trabalho está em desenvolvimento, algumas informações podem estar incompletas.
+⚠️ Este trabalho está em desenvolvimento, algumas informações podem estar incompletas ou equivocadas.
 
-Este repositório tem como objetivo ser um guia para desenvolvedores independentes e pequenas equipes de desenvolvimento, que cobre as melhores práticas e ferramentas para desenvolver um software do mundo real desde a concepção até o deploy.
+Este repositório tem como objetivo ser um guia que cobre as melhores práticas e ferramentas para desenvolver um software do mundo real desde a concepção até o deploy para desenvolvedores independentes e pequenas equipes de desenvolvimento.
 
-
-- Boirlerplate: starter
-- VSCODE: extensões + link cheetacheat + remote wsl quem usar windows
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-- Docker: Link installer WSL2 WINDOWS
-https://github.com/codeedu/wsl2-docker-quickstart
-sudo service docker start
-- Git: Link installer + commands and configurations + link cheetacheat
-- Github CLI: cheetcheat, porqwue usar, e installer
- https://github.com/alexeymezenin/laravel-best-practices
- https://buttercms.com/blog/laravel-best-practices/
- https://phptherightway.com/
  
- https://www.w3.org/wiki/JavaScript_best_practices
- https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/
- https://medium.com/before-semicolon/50-javascript-best-practice-rules-to-write-better-code-86ce731311d7
- 
- 
-- [Configuração ambiente de desenvolvimento](#headers)  
-  - [Ferramentas](#emphasis)
-  - [Boilerplates](#emphasis)
-- [Gerenciamento de projetos](#emphasis)
-  - [Criando novo projeto](#emphasis)
-    - [Histórias de usuário](#emphasis)
-    - [BDD com Gherkin](#emphasis)
-    - [Planejamento e versionamento](#)
-    - [TDD](#emphasis)
-    - [Desenvolvimento](#)
-    - [Refatoração](#)
-    - [QA](#)
-    - [CI/CD](#)
-    - [Changelogs](#)
-  - [Iniciando em um projeto existente](#emphasis)
-- [Regras e padrões de desenvolvimento](#emphasis)
-  - [Nomenclatura](#)
-  - [Estilo de código](#)
-    - [JS](#)
-    - [PHP](#) 
-  - [Segurança](#)
-  - [Acessibilidade](#)
+- [Configuração ambiente de desenvolvimento](#Configuração ambiente de desenvolvimento)  
+  - [Ferramentas](#Ferramentas)
+  - [Boilerplates](#Boilerplates)
+- [Gerenciamento de projetos](#Gerenciamento de projetos)
+  - [Criando novo projeto](#Criando novo projeto)
+    - [Histórias de usuário](#Histórias de usuário)
+    - [BDD com Gherkin](#BDD com Gherkin)
+    - [Planejamento e versionamento](#[Planejamento e versionamento)
+    - [TDD](#TDD)
+    - [Desenvolvimento](#Desenvolvimento)
+    - [Refatoração](#Refatoração)
+    - [QA](#QA)
+    - [CI/CD](#CI/CD)
+    - [Changelogs](#Changelogs)
+  - [Iniciando em um projeto existente](#Iniciando em um projeto existente)
+- [Regras e padrões de desenvolvimento](#Regras e padrões de desenvolvimento)
+  - [Nomenclatura](#Nomenclatura)
+  - [Estilo de código](#Estilo de código)
+    - [JS](#JS)
+    - [PHP](#PHP) 
+  - [Segurança](#Segurança)
+  - [Acessibilidade](#Acessibilidade)
   
    
-- [Configuração CI/CD](#emphasis)  
-  - [Configurando ambiente CI](#)
-  - [Configurando ambiente CD](#)
-  - [Gerenciando servidores](#)
-  - [Gerenciando Backups](#)
+- [Configuração CI/CD](#Configuração CI/CD)  
+  - [Configurando ambiente CI](#Configurando ambiente CI)
+  - [Configurando ambiente CD](#Configurando ambiente CD)
+  - [Gerenciando servidores](#Gerenciando servidores)
+  - [Gerenciando Backups](#Gerenciando Backups)
 
 
 
 # Configuração ambiente de desenvolvimento
 ## Ferramentas
+- Docker
 ## Boirlerplates
 # Gerenciamento de projetos
 O gerenciamento dos projetos são feitos com base na técnica de desenvolvimento [Extreme Programming](http://www.extremeprogramming.org/).
@@ -79,41 +63,9 @@ Uma história de usuário geralmente se concentra em três áreas:
 - Eu quero/Gostaria/Devo/Posso ( o que )
 - Para que/De/Para ( por que )
 
-Critérios de aceite:
-- [Mensagens de erro e validações padrão](#), não deve ser adicionadas nos critérios de aceite, validação só é adicionada caso seja exclusiva da regra de negócio.
-- Não use a palavra "não", exemplo:
-
-    ❌ Como usuário, não quero ter que digitar minha senha toda vez que acessar minha conta.
-
-    ✅ Como usuário, quero que minha senha seja lembrada e preenchida automaticamente para que eu possa acessar minha conta sem redigitar minha senha.
-
-Sendo um Comprador
-Eu quero me cadastrar na plataforma
-Para ter acesso ao questionário
-
-
-_Críterios de aceite_
-    
-    -> Os compradores só podem enviar o formulário caso preencham todos os campos obrigatórios [`Email`, `Senha`, `Selecionar empresa`]
-    -> Após o registro o comprador é redirecionado para o questionário.
-
-Sendo um Comprador
-Eu quero Responder o questionário
-Para Receber a Ánalise da Minha personalidade
-
-tt=Documentos da empresa
-Sendo uma empresa
-Eu quero Gerenciar os meus documentos
-Para que eu possa acessa-los a qualquer momento 
-[CA]
--> 
-
-Sendo um Administrador
-Eu quero Adicionar as perguntas do questionário
-Para que o comprador tenha acesso ao questionário
-
 Isso tudo geralmente é seguido por critérios de aceitação, que definem como você sabe se a interação foi bem-sucedida.
 
+... INVEST (...WIP)
 Independente = fazer com que ela possa ser resolvida sem depender de outras histórias.
 
 Negociável = pode ser alterada
@@ -135,6 +87,8 @@ Testável = deve ser possível testar se a história foi realizada.
 - [Escreva bons títulos](https://automationpanda.com/2018/01/31/good-gherkin-scenario-titles/)
 
 ### QA
+
+... WIP
 Modelo para registrar bugs QA e Suporte
 
 LOCAL:
