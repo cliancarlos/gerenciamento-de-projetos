@@ -1,8 +1,16 @@
-## Gerenciamento de projetos
+## Gerenciamento de projetos de software: do conceito à implantação
+
+⚠️ Este trabalho está em desenvolvimento, algumas informações podem estar incompletas.
+
+Este repositório tem como objetivo ser um guia para desenvolvedores independentes e pequenas equipes de desenvolvimento, que cobre as melhores práticas e ferramentas para desenvolver um software do mundo real desde a concepção até o deploy.
+
 
 - Boirlerplate: starter
-- VSCODE: extensões + link cheetacheat
-- Docker: Link installer
+- VSCODE: extensões + link cheetacheat + remote wsl quem usar windows
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+- Docker: Link installer WSL2 WINDOWS
+https://github.com/codeedu/wsl2-docker-quickstart
+sudo service docker start
 - Git: Link installer + commands and configurations + link cheetacheat
 - Github CLI: cheetcheat, porqwue usar, e installer
  https://github.com/alexeymezenin/laravel-best-practices
@@ -25,10 +33,10 @@
     - [TDD](#emphasis)
     - [Desenvolvimento](#)
     - [Refatoração](#)
-    - [??QA](#)
+    - [QA](#)
     - [CI/CD](#)
     - [Changelogs](#)
-  - [Iniciando em projeto existente](#emphasis)
+  - [Iniciando em um projeto existente](#emphasis)
 - [Regras e padrões de desenvolvimento](#emphasis)
   - [Nomenclatura](#)
   - [Estilo de código](#)
@@ -88,9 +96,17 @@ _Críterios de aceite_
     
     -> Os compradores só podem enviar o formulário caso preencham todos os campos obrigatórios [`Email`, `Senha`, `Selecionar empresa`]
     -> Após o registro o comprador é redirecionado para o questionário.
+
 Sendo um Comprador
 Eu quero Responder o questionário
 Para Receber a Ánalise da Minha personalidade
+
+tt=Documentos da empresa
+Sendo uma empresa
+Eu quero Gerenciar os meus documentos
+Para que eu possa acessa-los a qualquer momento 
+[CA]
+-> 
 
 Sendo um Administrador
 Eu quero Adicionar as perguntas do questionário
@@ -112,4 +128,64 @@ Testável = deve ser possível testar se a história foi realizada.
 
 
 ### BDD com Gherkin
+- Um cenário abrange apenas UM comportante, por isso não devem existir + que um "Quando / Então"
+- Siga a ordem Dado Quando Então!
+- Escreva o comportante sempre em terceira pessoa.
+- Usar tempo presente para todos os casos. [exemplo](https://automationpanda.com/2017/01/30/bdd-101-writing-good-gherkin/)
+- [Escreva bons títulos](https://automationpanda.com/2018/01/31/good-gherkin-scenario-titles/)
+
+### QA
+Modelo para registrar bugs QA e Suporte
+
+LOCAL:
+Nome do Sistema - Módulo e Menu relacionado
+
+VERSÃO:
+Identificar em que versão do sistema envolvido o problema pode ser
+repetido. Importante identificar se o problema pode ser repetido na
+última versão.
+
+PRÉ-CONDIÇÕES:
+• Identifique o que deve estar configurado no ambiente para
+que o problema possa ser repetido;
+• Pode ser uma lista de configurações a serem marcadas;
+• Ou simplesmente a indicação de que uma base de dados específica deve ser usada.
+
+PASSOS PARA REPRODUÇÃO DO ERRO:
+1) Monte uma lista indicando os passos que devem ser realizados
+para repetir o erro;
+2) Você pode ser específico e identificar o que deve ser preenchido
+em cada campo;
+
+Exemplo:
+LOCAL:
+SoftVendas – Módulo Mobile – Tela de vendas de produtos
+VERSÃO:
+Identificado na última versão (03.50), o problema não ocorre em
+versões anteriores.
+PRÉ-CONDIÇÕES:
+• Acessar o ambiente de homologação;
+• Logar com usuário “alfredo”, senha “xyz9988”;
+PASSOS PARA REPRODUÇÃO DO ERRO:
+1) Uma vez já logado no sistema mobile, acesse o menu “Vendas”;
+2) Selecione um cliente qualquer e abra uma nova venda;
+3) Na tela de listagem de produtos, selecione qualquer produto;
+4) Após selecionar um produto informe a quantidade a ser vendida
+(pode ser 10), e no campo desconto informe um desconto (pode ser
+10% de desconto).
+ERRO:
+Mesmo após informar o desconto, o valor total do produto segue
+sendo o mesmo que era antes (sem o desconto).
+SITUAÇÃO DESEJADA:
+Que o valor total do produto considere o desconto aplicado, ou seja:
+Valor total do produto = (Valor unitário * Quantidade) – Desconto.
+Exemplo: Se valor do produto é 90,00, a quantidade informada é
+10, e o percentual de desconto é informado é 10%, então o valor total do produto deve ser 810,00.
+
+Algumas considerações sobre o exemplo citado:
+Repare como as seções PRÉ CONDIÇÕES e PASSOS PARA A REPRODUÇÃO DO ERRO, são importantes para fazer o erro acontecer.
+Perceba também que na seção SITUAÇÃO DESEJADA além de citar
+a explicação do que deve ocorrer nós também citamos um exemplo
+prático, neste caso com um exemplo real do cálculo de preço total
+do produto.
 
