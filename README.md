@@ -1,4 +1,4 @@
-## Gerenciamento de projetos de software: do conceito à implantação
+## Gerenciamento de projetos de software: do conceito à implantação (PT-BR)
 
 ⚠️ Este trabalho está em desenvolvimento, algumas informações podem estar incompletas ou equivocadas.
 
