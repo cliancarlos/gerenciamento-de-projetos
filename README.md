@@ -80,6 +80,31 @@ Testável = deve ser possível testar se a história foi realizada.
 
 
 ### BDD com Gherkin
+#### Palavras-chave
+[ # ] # language: pt
+
+_Etapas_
+- Dado/* (given):
+- Quando/* (when):
+- Então/* (then):
+- E/* (and):
+- Mas/* (but):
+
+_Descritivas_
+- Funcionalidade (feature): fornece uma descrição de alto nível de um recurso de software e agrupar cenários relacionados.
+- Contexto (background)
+- Regra (rule):
+- Cenário (scenario):
+- Esquema do Cenário (scenarioOutline):
+- Exemplos (examples):
+
+_Propriedades para as etapas_
+- """ (Doc Strings): Usado para passar um pedaço maior de texto para a definição de uma etapa.
+- | (Data table): Usado para passar uma lista de dados para a definição de uma etapa.
+- @: Tag
+- #: Comentários
+
+___
 - Um cenário abrange apenas UM comportante, por isso não devem existir + que um "Quando / Então"
 - Siga a ordem Dado Quando Então!
 - Escreva o comportante sempre em terceira pessoa.
